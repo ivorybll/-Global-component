@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import loadingPlugin from './assets/method/alert.js'
 import message from './assets/message/index.js'
+import bird from './assets/bird'
 
 // import loadingPlugin from './assets/method/alert.js'
 // console.log(loadingPlugin)
@@ -12,6 +13,7 @@ import message from './assets/message/index.js'
 Vue.config.productionTip = false
 Vue.use(loadingPlugin)
 Vue.use(message)
+Vue.use(bird)
 
 /* eslint-disable no-new */
 new Vue({

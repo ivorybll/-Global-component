@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="myclick">恭喜发财</button>
+    <button @click="myclick" style="z-index:999;position:absolute;">恭喜发财</button>
     <!-- <alertsan></alertsan> -->
   </div>
 </template>
@@ -11,11 +11,16 @@ export default {
   data () { return {} },
   methods: {
     myclick () {
-      const hide = this.$loading('正在加载，请稍等...')
-      console.log(hide)
+      // const hide = this.$loading('正在加载，请稍等...')
+      // console.log(hide)
+      // setTimeout(() => {
+      //   hide()
+      // }, 2000)
+      const birdloading = this.$birdloading()
+      console.log(birdloading)
       setTimeout(() => {
-        hide()
-      }, 2000)
+        birdloading()
+      }, 5000)
       // this.$message.info('lalal')
     }
   },

@@ -1,5 +1,6 @@
 <template>
   <div id="loading-wrapper">{{msg}}</div>
+
 </template>
 
 <script>

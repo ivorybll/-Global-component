@@ -1,6 +1,6 @@
 // export const loadingPlugin = {
 import alertsan from './alertsan.vue'
-export const loadingPlugin = {
+const loadingPlugin = {
   install: function (vm) {
     // vm.component('alertsan', alertsan)
     // const LoadingComponent = vm.extend({
